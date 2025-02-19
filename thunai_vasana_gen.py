@@ -5,11 +5,28 @@
 # clear && streamlit run thunai_vasana_gen.py
 
 import streamlit as st
+from PIL import Image
 from tempfile import NamedTemporaryFile
 import whisper
 import os
 
 # Main app
+
+# Hide footer and main menu
+hide_default_format = """
+    <style>
+    #MainMenu {visibility: hidden; }
+    footer {visibility: hidden;}
+    .stAppDeployButton {visibility: hidden;}
+    </style>
+"""
+# Loading Image using PIL
+im = Image.open('./content/App_Icon.png')
+# Adding Image to web app
+st.set_page_config(page_title="Subtitle Generator", page_icon=im)
+
+st.markdown(hide_default_format, unsafe_allow_html=True)
+
 st.title("🗞 Subtitle Generator")
 st.write("Generate a .srt file from an Audio file (mp3) using AI")
 
