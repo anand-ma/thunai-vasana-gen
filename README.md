@@ -7,6 +7,7 @@ Generates a .srt File from Audio file given using AI! Thunai Vasana means subtit
 
 https://thunai_vasana_gen.streamlit.app/
 
+Add ffmeg to packages.txt to tell streamlit cloud to install dependency for the app
 
 
 
