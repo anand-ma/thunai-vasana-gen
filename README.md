@@ -5,7 +5,7 @@ Generates a .srt File from Audio file given using AI! Thunai Vasana means subtit
 
 ## App link:
 
-https://subtitle-gen.streamlit.app/
+https://thunai_vasana_gen.streamlit.app/
 
 
 
