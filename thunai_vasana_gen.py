@@ -4,6 +4,9 @@
 # To run in local
 # clear && streamlit run thunai_vasana_gen.py
 
+# to use virtual env for python run below command
+# source "./.venv/bin/activate"
+
 import streamlit as st
 from PIL import Image
 from tempfile import NamedTemporaryFile
@@ -94,7 +97,7 @@ if audio_file and not st.session_state.srt_content:
             temp.seek(0)
 
             # Load the Whisper model
-            model = whisper.load_model("base")
+            model = whisper.load_model("tiny.en")
 
             # Transcribe the audio file
             result = model.transcribe(temp.name)
