@@ -91,7 +91,7 @@ if audio_file and st.session_state.audio_filename != audio_file.name: # if new f
     st.session_state.filename = None
 
 if audio_file and not st.session_state.srt_content:
-    with st.spinner("Generating your Subtitle..."):
+    with st.spinner("Generating your Subtitle...", show_time=True):
         with NamedTemporaryFile(suffix="mp3") as temp:
             temp.write(audio_file.getvalue())
             temp.seek(0)
