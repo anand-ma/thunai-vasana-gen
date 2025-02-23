@@ -6,7 +6,6 @@
       "use": "@vercel/python"
     }
   ],
-  "runtime": "python3.9",
   "scripts": {
     "start": "streamlit run thunai_vasana_gen.py"
   }
