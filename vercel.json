@@ -6,7 +6,13 @@
       "use": "@vercel/python"
     }
   ],
-  "scripts": {
-    "start": "streamlit run thunai_vasana_gen.py"
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/thunai_vasana_gen.py"
+    }
+  ],
+  "env": {
+    "PYTHONUNBUFFERED": "1"
   }
 }
