@@ -18,8 +18,7 @@ import os
 # Hide footer and main menu
 hide_default_format = """
     <style>
-    #MainMenu {visibility: hidden; }
-    footer {
+    footer, header {
         visibility: hidden;
         position: relative;
     }
