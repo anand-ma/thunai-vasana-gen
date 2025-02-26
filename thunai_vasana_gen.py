@@ -18,10 +18,13 @@ import os
 # Hide footer and main menu
 hide_default_format = """
     <style>
-    footer, header {
-        visibility: hidden;
-        position: relative;
-    }
+        [class*="viewerBadge"],
+        [class*="profileContainer"],
+        footer,
+        header {
+            visibility: hidden;
+            position: relative;
+        }
     </style>
 """
 # Loading Image using PIL
