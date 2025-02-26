@@ -19,14 +19,16 @@ import os
 hide_default_format = """
     <style>
     #MainMenu {visibility: hidden; }
-    footer {visibility: hidden;}
-    .stAppDeployButton {visibility: hidden;}
+    footer {
+        visibility: hidden;
+        position: relative;
+    }
     </style>
 """
 # Loading Image using PIL
 im = Image.open('./content/App_Icon.png')
 # Adding Image to web app
-st.set_page_config(page_title="Subtitle Generator", page_icon=im)
+st.set_page_config(page_title="Subtitle Generator", page_icon=im, menu_items=None)
 
 st.markdown(hide_default_format, unsafe_allow_html=True)
 
